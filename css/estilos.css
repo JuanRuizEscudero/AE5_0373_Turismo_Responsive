@@ -1,0 +1,72 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Gris muy suave */
+    color: #333;
+}
+
+
+header {
+    background-color: #2c3e50; /* Azul oscuro elegante */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 300;
+}
+
+/* --- ESTRUCTURA PRINCIPAL --- */
+.contenedor-principal {
+    display: flex; /* Esto activa las columnas */
+    flex-wrap: wrap; /* Para móviles */
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 20px; /* Hueco entre columnas */
+    padding: 0 15px;
+}
+
+/* COLUMNA IZQUIERDA: MENÚ */
+.columna-menu {
+    flex: 0 0 200px; /* Ancho fijo */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+/* COLUMNA CENTRAL: CONTENIDO */
+.columna-central {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* COLUMNA DERECHA: NOTICIAS */
+.columna-noticias {
+    flex: 0 0 250px; /* Ancho fijo de 250px */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+/* Ajuste para móvil */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column;
+    }
+    .columna-menu, .columna-central, .columna-noticias {
+        width: 100%;
+    }
+}
