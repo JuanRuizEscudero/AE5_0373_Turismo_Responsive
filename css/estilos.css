@@ -70,3 +70,77 @@ header h1 {
         width: 100%;
     }
 }
+
+/* Menú de navegación */
+.columna-menu ul {
+    list-style: none; /* Quita los puntos */
+    padding: 0;
+}
+.columna-menu a {
+    text-decoration: none;
+    color: #2c3e50;
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+.columna-menu a:hover {
+    color: #3498db; /* Azul al pasar el ratón */
+    padding-left: 5px; 
+    transition: all 0.3s;
+}
+
+/* Galería de fotos */
+.mi-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.mi-galeria img {
+    width: 32%; /* 3 fotos por fila */
+    height: 100px;
+    object-fit: cover; /* Recorta la foto para que no se estire */
+    border-radius: 4px;
+}
+
+/* Fichas de Lugares */
+.ficha-lugar {
+    display: flex; /* Foto a la izquierda, texto derecha */
+    align-items: center;
+    background: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 4px solid #3498db; /* Borde azul bonito */
+}
+.ficha-lugar img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+/* Noticias (Aside) */
+.columna-noticias h3 {
+    color: #c0392b; /* Rojo oscuro */
+    border-bottom: 2px solid #c0392b;
+    padding-bottom: 5px;
+}
+.bloque-noticia {
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+}
+.bloque-noticia img {
+    width: 100%; /* La foto ocupa todo el ancho de la colummna */
+    height: auto;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+.bloque-noticia h4 {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+.bloque-noticia a {
+    font-size: 0.8rem;
+    color: #3498db;
+}
